@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="TVA">Calculeaza-mi TVA-ul</h1>
+    <input text="text" name="" id="procent">
+    <button onclick=" executa_citirea() ">Calculeaza-mi TVA-ul</button>
+
+    <script>
+        var element_TVA = document.getElementById('TVA');
+        var element_text = document.getElementById('procent');
+
+        function executa_citirea(){
+            element_TVA.innerHTML = element_text.value * 1.19;
+            element_TVA.style.color = element_text.value; 
+        }
+
+
+    </script>
+</body>
+</html>
